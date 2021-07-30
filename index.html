@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Grid Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Grid Layout</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Source+Sans+Pro:400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="style-main.css" type="text/css" media="all">
 </head>
-<body>
-  
+
+<body class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead">
+        <div class="logo">A</div>
+        <h2 class="site-title">is for Anger</h2>
+        <img src="images/AdobeStock_89173165.jpeg" alt="Angry Man">
+    </header><!-- .masthead -->
+
+    <main id="content" class="main-area">
+        <section class="splash">
+            <div class="splash-content">
+                <h2 class="content-title">What sets you off?</h2>
+                <div class="splash-text">
+                    <p>I’ll admit I’ve been an asshole on the phone more than once. Between the long waits, the agents who don’t seem to know how in the world to resolve the problem or difficulty understanding accents, I’ve exploded and usually regretted it. I know I need to get a grip and I will sincerely try to manage my anger and frustration better. I rarely express more than tight-lipped impatience in person but somehow on the phone, my dark side takes over. Thanks for the reminder.</p>
+                </div><!-- .splash-text -->
+            </div><!-- .splash-content -->
+        </section><!-- .splash -->
+
+        <section class="buckets">
+            <ul>
+                <li>
+                    <img src="images/AdobeStock_131917135.jpeg" alt="Road Rage">
+                    <div class="bucket">
+                        <h3 class="bucket-title">Bad Drivers</h3>
+                        <p>CSS Grid is a two-dimensional layout tool. It is great for laying out content in a grid, and for laying out content in two dimensions.</p>
+                    </div><!-- .bucket -->
+                </li>
+                <li>
+                    <img src="images/AdobeStock_395171312.jpeg" alt="No Tolerance">
+                    <div class="bucket">
+                        <h3 class="bucket-title">Bully's</h3>
+                        <p>That said, Grid is not always the right option for layouts. If for example you need to lay out a series of identical boxes like those you see here, Flex may be a better option.</p>
+                    </div><!-- .bucket -->
+                </li>
+                <li>
+                    <img src="images/AdobeStock_269830005.jpeg" alt="Smokers" >
+                    <div class="bucket">
+                        <h3 class="bucket-title">Blowing smoke</h3>
+                        <p>In some cases Grid and Flex are interchangeable. In other cases one is definitely better than the other. The choice usually comes down to whether you are laying out a list of items (Flex) or creating a more nuanced layout (Grid).</p>
+                    </div><!-- .bucket -->
+                </li>
+            </ul>
+        </section><!-- .buckets -->
+
+        <section class="more">
+            <div class="more-content">
+                <h2 class="content-title">What makes a person angry?</h2>
+                <p>
+                  There are many common triggers for anger, such as losing your patience, feeling as if your opinion or efforts aren't appreciated, and injustice. Other causes of anger include memories of traumatic or enraging events and worrying about personal problems.<p>
+            </div><!-- .more-content -->
+        </section><!-- .more -->
+
+        <section class="twins">
+            <div class="twin">
+                <h2 class="content-title">Help is available.</h2>
+                <p>Creating this layout, where two items share the total available viewport width evenly alongside full-width and centered content, is suprisingly complex if you don't have CSS Grid available.</p>
+            </div>
+            <div class="twin">
+                <h2 class="content-title">Grid requires a rethink</h2>
+                <p>Seeing this layout you may still think it's better to just use old methods with auto-margins and max-widths. And you <em>can</em>, but looking at the CSS you'll see the Grid approach is both cleaner and easier to understand.</p>
+            </div>
+        </section><!-- .twins -->
+    </main>
+
+    <footer class="colophon">
+		<aside>All photos: <a href="https://twitter.com/mor10" target="_blank" rel="nofollow">Morten Rand-Hendriksen</a>.</aside>
+        <aside>For more information, visit <a href="https://linkedin.com/learning" target="_blank" rel="nofollow">LinkedIn Learning</a>.</aside>
+    </footer>
+
 </body>
+
 </html>
