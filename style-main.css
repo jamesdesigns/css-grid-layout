@@ -163,6 +163,19 @@ img {
 
 /* Promo section */
 
+.hero-img {
+	height: 500px;
+  object-fit: cover;
+	  /* for Webkit browsere, Chrome 19+, Safari 6+ ... */
+		-webkit-filter: grayscale(1);
+
+		/* this is for Firefox 3.5+, Firefox mobile */
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");
+	
+		/* for IE6+ */
+		filter: gray;
+}
+
 .logo,
 .site-title {
 	text-align: center;
@@ -177,12 +190,15 @@ img {
 .site-title {
 	margin-top: -1em;
 	margin-bottom: 3em;
+	font-weight: 100;
 }
+
 
 /* Splash section */
 
 .splash {
-	background: #FFF6E5;
+	background: red;
+	color: white;
 	padding-bottom: 2em;
 }
 
@@ -203,14 +219,26 @@ img {
 
 /* Buckets section */
 
+.buckets ul li img {
+	  /* for Webkit browsere, Chrome 19+, Safari 6+ ... */
+		-webkit-filter: grayscale(1);
+
+		/* this is for Firefox 3.5+, Firefox mobile */
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");
+	
+		/* for IE6+ */
+		filter: gray;
+}
+
 .buckets {
 	padding: 2em 1em 1em;
-	background: #3E454C;
+	background: #202020;
 }
 
 .buckets ul {
 	margin: 0;
 	padding: 0;
+	border-radius: 15px;
 }
 
 .buckets li {
@@ -238,7 +266,7 @@ img {
 }
 
 .twin:last-of-type {
-	background: #FF7F66;
+	background: red;
 }
 
 /* Colophon section */
@@ -273,6 +301,12 @@ Use flex to create a three-bucket layout
 
 		.buckets li {
 			width: 31%;
+			border-radius: 15px;
+		}
+
+		.buckets li img {
+			border-top-right-radius: 15px;
+			border-top-left-radius: 15px;
 		}
 
 	}
